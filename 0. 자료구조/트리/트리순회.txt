@@ -1,0 +1,8 @@
+7
+A B C
+B D E
+C F G
+D None None
+E None None
+F None None
+G None None

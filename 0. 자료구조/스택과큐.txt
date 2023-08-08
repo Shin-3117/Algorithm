@@ -1,0 +1,15 @@
+ 스택 선입후출
+lst.append('a') #lst에 'a' 입력
+lst.pop() #lst에서 출력
+
+ 큐 선입선출
+ #파이썬에서 큐(Queue) 구현을 위해 라이브러리 사용 권장
+ 
+ from collections import deque
+que = deque()
+que.append('a') #que에 'a' 입력
+que.popleft() #que에서 출력
+
+#list를 사용하면, 원소를 꺼낸 뒤, 위치를 조정하는 과정 때문에
+원소를 꺼내는 연산이 O(k)의 시간복잡도 요구됨
+->deque 사용 권장
