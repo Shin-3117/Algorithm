@@ -1,4 +1,5 @@
 # https://www.acmicpc.net/problem/1012
+# BFS 그래프 이어진영역체크
 """
 1. Idea
 2중 포문으로 돌면서 1찾기

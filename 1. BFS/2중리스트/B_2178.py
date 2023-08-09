@@ -1,4 +1,5 @@
 # https://www.acmicpc.net/problem/2178
+# BFS 그래프 그래프 칸 카운트
 """
 1. Idea
 시작은 0,0 고정

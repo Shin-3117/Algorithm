@@ -23,5 +23,6 @@ def bfs(graph, start, visited):
         #미방문 인접 원소들을 큐에 삽입
         for i in graph[v]:
             if not visited[i]:
+                # 
                 queue.append(i)
                 visited[i] = True

@@ -14,7 +14,8 @@ E = 4*N^2
 - 방문 여부 : bool[][]
 - 결과값 : int[]
 """
-
+# 의외인점 chk 안 만들고 map 수정하는 거보다 chk 만든게 더 빠름
+# 안 만듬 (52ms / 31332KB) chk만듬 (44ms / 31332KB)
 import sys
 sys.stdin = open('./inputs/B_2667.txt','r', encoding='utf-8')
 N = int(sys.stdin.readline())

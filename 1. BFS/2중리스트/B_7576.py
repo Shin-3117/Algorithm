@@ -1,4 +1,5 @@
 # https://www.acmicpc.net/problem/7576
+# BFS 그래프 /그래프 칸 카운트 /BFS에 list 넣기
 """
 1. idea
 이중 for문으로 1의 위치 찾고

@@ -1,4 +1,5 @@
 # https://www.acmicpc.net/problem/1926
+# BFS 그래프 이어진영역체크
 """
 1. 아이디어
 - 2중 for => 값 1 and 미방문 => BFS
