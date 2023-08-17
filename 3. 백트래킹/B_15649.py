@@ -3,7 +3,7 @@
 중복이 가능한 경우 : N^N, N=8 까지 가능
 8^8 = 1677,7216
 """
-
+# 순열
 import sys
 # sys.stdin = open('./inputs/B_15649.txt','r')
 N,M = map(int, sys.stdin.readline().split())

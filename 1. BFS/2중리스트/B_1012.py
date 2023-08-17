@@ -16,7 +16,7 @@ chk : boolean[][]
 sol : int
 """
 import sys
-from collections import deque
+# from collections import deque
 sys.stdin = open('./inputs/B_1012.txt','r', encoding='utf-8')
 for _ in range(int(sys.stdin.readline())):
     N,M,K = map(int,sys.stdin.readline().split())
@@ -29,10 +29,12 @@ for _ in range(int(sys.stdin.readline())):
 
     def bfs(i,j):
         rs = 1
-        q =deque()
+        # q =deque()
+        q= []
         q.append((i,j))
         while q:
-            i,j = q.popleft()
+            # i,j = q.popleft()
+            i,j = q.pop(0)
             for d in range(4):
                 ii=i+di[d]
                 jj=j+dj[d]

@@ -13,7 +13,7 @@ E : 4*V
 3. data structure
 lab_map = int[][]
 """
-from collections import deque
+# from collections import deque
 import copy
 import sys
 input = sys.stdin.readline
@@ -23,7 +23,8 @@ di = [1,-1,0,0]
 dj = [0,0,1,-1]
 
 def bfs():
-    q = deque()
+    # q = deque()
+    q = []
     test_map = copy.deepcopy(lab_map)
     # 바이러스(2)위치 찾고 q에 넣기
     for i in range(n):
@@ -33,7 +34,8 @@ def bfs():
     
     # 바이러스(2) 퍼트리기
     while q:
-        i,j = q.popleft()
+        # i,j = q.popleft()
+        i,j = q.pop(0)
         for k in range(4):
             ii=i+di[k]
             jj=j+dj[k]
