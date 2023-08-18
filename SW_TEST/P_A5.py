@@ -57,10 +57,13 @@ for t in range(int(input())):
                 p = G[i][j] + G[i+1][j] + G[i+2][j] + G[i][j+1]
                 b = G[i][j] + G[i+1][j] + G[i+2][j] + G[i+1][j+1]
                 sol = max(sol,p,b)
-            # elif j==J and 0<=i<I-2:
-            #     if j%2==0:
-            #         q = G[i][j] + G[i+1][j] + G[i+2][j] + G[i][j+1]
-            #         d = G[i][j] + G[i+1][j] + G[i+2][j] + G[i+1][j+1]
-            #     sol = max(sol,q,d)
+            elif j==J and 0<=i<I-2:
+                if j%2==0:
+                    q = G[i][j] + G[i+1][j] + G[i+2][j] + G[i][j-1]
+                    d = G[i][j] + G[i+1][j] + G[i+2][j] + G[i+1][j-1]
+                elif j%2==1:
+                    q = G[i][j] + G[i+1][j] + G[i+2][j] + G[i+1][j-1]
+                    d = G[i][j] + G[i+1][j] + G[i+2][j] + G[i+2][j-1]
+                sol = max(sol,q,d)
     
     print(f'#{t+1} {sol}')
