@@ -1,3 +1,4 @@
+# [S/W 문제해결 기본] 9일차 - 중위순회
 import sys
 sys.stdin = open('./inputs/S_1231.txt','r')
 def inorder(v):
