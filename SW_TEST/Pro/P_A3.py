@@ -18,14 +18,16 @@ Rrc = Rcr을 충족한다.
 그래프가 인접행렬방식으로 주어저 연결여부 확인은 O(1)
 2. 지역구 값을 더한 값을 차이를 구한다.
 """
+# 선택한 마을이 연결되있는 지 확인하는 함수
 def isLink(graph,cc):
     L = len(cc)
     E = 0
     for i in range(L):
         for j in range(i,L):
+            # 그래프가 인접행렬방식
             if graph[cc[i]][cc[j]] == 1:
                 E+=1
-    # print(L,E)
+    # (간선의 수)가 (노드의 수-1) 보다 많으면 연결된 것
     if L-1 <= E:
         return True
     else: return False
@@ -36,12 +38,15 @@ for t in range(int(input())):
     people_in_village = list(map(int,input().split()))
     
     total_people = sum(people_in_village)
+    # 무한대
     sol = float('inf')
     
     village_list = list(range(num_villages))
+    # 8C1, 8C2, 8C3, 8C4 실행
     for com in range(1,num_villages//2+1):
         group1lst = []
         group2lst = []
+        # 조합으로 나온 경우들 그룹1,그룹2에 추가
         for c in combinations(village_list,com):
             group1lst.append(c)
         for c in combinations(village_list,num_villages-com):
