@@ -48,7 +48,7 @@ for tc in range(int(input())):
                 datas.append(row_data)
     # print(datas)
     # 데이터 숫자로 바꾸기
-    
+    sol =0
     for data in datas:
         TwoData = num16to2(data)
         # print(TwoData)
@@ -78,6 +78,8 @@ for tc in range(int(input())):
                     CC.append(C0101)
                     C0101 = [0,0,0]
                     cidx = 2
+        if CC != [0,0,0]:
+            CC.append(C0101)
         # print(CC)
         nums = to10(CC)
         # 뒤집기
@@ -92,9 +94,11 @@ for tc in range(int(input())):
                     cnt+=nums[i]*3
                 else: cnt+=nums[i]
             if cnt %10 ==0:
+                # print('a')
                 sol_cnt = 0
                 for i in range(l*8,l*8+8):
                     sol_cnt +=nums[i]
-    sol = sol_cnt
+                sol += sol_cnt
+    
     print(f'#{tc + 1} {sol}')
 
