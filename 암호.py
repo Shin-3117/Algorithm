@@ -23,6 +23,7 @@ def num16to2(datas):
     return sol
 
 def to10(CC):
+
     C_sol = []
     for C in CC:
         if C == [2,1,1]: C_sol.append(0)
@@ -35,6 +36,8 @@ def to10(CC):
         elif C == [3,1,2]: C_sol.append(7)
         elif C == [2,1,3]: C_sol.append(8)
         elif C == [1,1,2]: C_sol.append(9)
+    rs = [C_sol[i:i+8] for i in range(0,len(C_sol),8)]
+    print(rs)
     return C_sol
 #[6, 5, 9, 4, 9, 6, 8, 1, 7, 2, 2, 8, 6, 4, 4, 1]
 
