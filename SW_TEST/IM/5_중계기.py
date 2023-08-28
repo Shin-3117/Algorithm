@@ -30,3 +30,10 @@ for t in range(1, T+1):
             break
 
     print(f'#{t}', sol)
+"""
+#1 2
+#2 3
+#3 3
+#4 5
+#5 6
+"""

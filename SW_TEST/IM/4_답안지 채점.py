@@ -21,3 +21,9 @@ for test_case in range(1, T+1):
                 cnt = 0
         total_lst.append(total)
     print(f'#{test_case}', max(total_lst)-min(total_lst))
+"""
+#1 42
+#2 227
+#3 11
+#4 66
+"""

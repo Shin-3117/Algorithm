@@ -32,6 +32,6 @@ graph_2D=[
     [1,7]
 ]
 
-visited = [False]*9#노드가 8이라 9로 지정
+visited = [False]*len(graph_2D)#노드가 8이라 9로 지정
 
 dfs(graph_2D,1,visited)

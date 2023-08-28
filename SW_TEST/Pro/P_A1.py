@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('./SW_TEST/P_A1.txt','r')
+sys.stdin = open('./SW_TEST/Pro/P_A1.txt','r')
 #6 2 4 8
 di = [0,1,0,-1]
 dj = [1,0,-1,0]
@@ -15,6 +15,7 @@ curve7 = [3,2,1,3]
 # 9
 directions9 = [3,0,0,0]
 curve9 = [3,3,2,1]
+
 for t in range(int(input())):
     N = int(input())
     G = []
@@ -39,22 +40,29 @@ for t in range(int(input())):
             sol += curve1[direction]
             direction = directions1[direction]
         # 사과가 키패드 3번 위치에 있을 때
-        if position_i < i and position_j < j:
+        elif position_i < i and position_j < j:
             position_i = i
             position_j = j
             sol += curve3[direction]
             direction = directions3[direction]
         # 사과가 키패드 7번 위치에 있을 때
-        if position_i > i and position_j > j:
+        elif position_i > i and position_j > j:
             position_i = i
             position_j = j
             sol += curve7[direction]
             direction = directions7[direction]
         # 사과가 키패드 9번 위치에 있을 때
-        if position_i > i and position_j < j:
+        elif position_i > i and position_j < j:
             position_i = i
             position_j = j
             sol += curve9[direction]
             direction = directions9[direction]
     
     print(f'#{t+1} {sol}')
+"""
+#1 7
+#2 9
+#3 10
+#4 14
+#5 23
+"""
