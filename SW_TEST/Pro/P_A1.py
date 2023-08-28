@@ -3,7 +3,7 @@ sys.stdin = open('./SW_TEST/P_A1.txt','r')
 #6 2 4 8
 di = [0,1,0,-1]
 dj = [1,0,-1,0]
-# 1
+# 키패드 1위치에 있을 경우
 directions1 = [2,2,1,2]
 curve1 = [2,1,3,3]
 # 3

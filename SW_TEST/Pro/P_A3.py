@@ -53,13 +53,18 @@ for t in range(int(input())):
             group2lst.append(c)
         # print(group1lst)
         # print(group2lst)
+        # 그룹1의 길이 =그룹2의 길이 만큼 반복
         group_num = len(group1lst)
         for idx in range(group_num):
+            # 두 개 조합 각각의 마을이 모두 연결되 있는 경우
             if isLink(G,group1lst[idx]) and isLink(G,group2lst[-idx-1]):
                 group1_people = 0
+                # 마을에 있는 사람 수 더하기
                 for village in group1lst[idx]:
                     group1_people += people_in_village[village]
+                # A - B -> A - (total-A) -> 2A-total
                 abs_group =abs(total_people-2*group1_people)
+                # 반복하며 가장 작은 값 저장
                 if sol > abs_group:
                     sol = abs_group
 
