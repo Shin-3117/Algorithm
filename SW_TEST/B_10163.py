@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/10163
-
+# 조건 대로 해줘도 53점 잘 못 만든 문제 1
 T = int(input())
 squares = []
 N = 1001
