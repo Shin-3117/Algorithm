@@ -10,7 +10,6 @@ def bfs(s):
     cnt = 0
     while q:
         cnt += 1
-        # print(cnt,q)
         for _ in range(len(q)):
             v = q.pop(0) # 2 / 
             for i in G[v]:
@@ -18,7 +17,7 @@ def bfs(s):
                     C[i] = cnt
                     q.append(i)
 
-for t in range(1,11):
+for t in range(1,2):
     N, S = map(int,input().split())
     # G = [[] for _ in range(101)]
     # C = [0]*101
@@ -33,15 +32,16 @@ for t in range(1,11):
         C.setdefault(data[i*2],0)
         C.setdefault(data[i*2+1],0)
     
-    # print(G)
-    # print(C)
+    print(G)
+    print(C)
     bfs(S)
-
+    print(C)
     # top = max(C)
     # for i in range(100,0,-1):
     #     if C[i] == top:
     #         sol = i
     #         break
     tmp = [k for k,v in C.items() if max(C.values()) == v]
+    print(tmp)
     sol = max(tmp)
     print(f'#{t} {sol}')
