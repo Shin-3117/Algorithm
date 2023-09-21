@@ -47,7 +47,7 @@ print(find_set(3))
 
 # 같은 그룹인 지 판별
 t_x = 0
-t_y = 2
+t_y = 3
 
 if find_set(t_x) == find_set(t_y):
     print(f"{t_x} 와 {t_y} 는 같은 집합에 속해 있습니다.")
