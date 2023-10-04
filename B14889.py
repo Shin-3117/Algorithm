@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('./inputs2/S14889.txt','r')
+sys.stdin = open('./inputs2/B14889.txt','r')
 input = sys.stdin.readline
 N = int(input())
 G = [list(map(int,input().split())) for _ in range(N)]
