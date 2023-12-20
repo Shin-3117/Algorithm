@@ -13,3 +13,5 @@ for _ in range(M):
   i,j = map(int, input().split())
   ans = sum_stack[j]-sum_stack[i-1]
   print(ans)
+
+#부분합
