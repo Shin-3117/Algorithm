@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "ms-ceintl.vscode-language-pack-ko"
+        "ms-ceintl.vscode-language-pack-ko",
+        "formulahendry.code-runner"
     ]
 }
