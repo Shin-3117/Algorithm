@@ -10,7 +10,7 @@
 # 9 55
 
 N = int(input())
-dp = [0]*1001
+dp = [0]*1001 #(n+1)로 하면 n=1일때 dp[2]가 에러남
 dp[1]=1
 dp[2]=2
 for idx in range(3,N+1):
