@@ -31,7 +31,7 @@ def dijkstra(start):
         # 현재 시점에서
         # 누적 거리가 가장 짧은 노드에 대한 정보 꺼내기
         dist, now = heapq.heappop(pq)
-
+        print(dist, now)
         # 이미 방문한 지점 + 누적 거리가 더 짧게 방문한 적이 있다면 pass
         if distance[now] < dist:
             continue
